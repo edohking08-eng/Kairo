@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">KAIRO</string>
-    <string name="accessibility_description">KAIRO uses accessibility access to understand and interact with supported on-screen interfaces when you explicitly enable the service.</string>
-</resources>
