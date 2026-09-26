@@ -27,9 +27,14 @@ jobs:
 
       - name: Extract KAIRO
         run: |
-          unzip -q KAIRO-v0.1.zip
-          ls -la
-          ls -la KAIRO-v0.1
+          if [ -f KAIRO-v0.1.zip ]; then
+            unzip -q -o KAIRO-v0.1.zip
+            ls -la
+            ls -la KAIRO-v0.1
+          else
+            echo "KAIRO-v0.1.zip not found. Checking for source directory..."
+            ls -la
+          fi
 
       - name: Build APK
         working-directory: KAIRO-v0.1
